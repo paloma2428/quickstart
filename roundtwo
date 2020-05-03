@@ -1,0 +1,11 @@
+var plaid = require('plaid');
+
+var plaidClient = new plaid.Client(
+  PLAID_CLIENT_ID,
+  PLAID_SECRET,
+  PLAID_PUBLIC_KEY,
+  plaid.environments.sandbox,
+  {
+    version: '2019-05-29', // specify API version
+  }
+);
